@@ -68,7 +68,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"class.zichenccc.top","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"class.zichenccc.top","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":true,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":false,"baidu":"da2eb9272abf5e5dcbb9ca21302e2e35","google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"ncFqOOxpQfzf9y82K9x3ISTF-MdYXbMMI","app_key":"gWGurvIdrJQoPpVpgCGXnVVY","server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -78,6 +78,32 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+    <!-- Baidu Analytics -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?da2eb9272abf5e5dcbb9ca21302e2e35";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
 
 
   
@@ -271,11 +297,11 @@
 <p>如果你说我这样建站的意图到底从何而来，也许是由于我的一段经历。总之那次以后，我十分怀念同学之间的情谊，而在中考开启约前六个月，受腾讯文档类软件的启发，我初步采用了腾讯文档来采取如今图库的功能。<br>而腾讯文档生成的名字难记，于是我采取了卡片上预留二维码的方式。但由于时间等原因，当时的卡片制作出来却留在我手中，发不出去，这个计划就这样落灰。如今我重新拾起这一段工程，而用它来承载我们高中同学们的回忆，希望大家能用的开心，玩的愉快。</p>
 <div style="display: flex; gap: 20px; justify-content: center; margin: 30px 0;">
   <div style="box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; max-width: 300px;">
-    <img src="https://s21.ax1x.com/2025/03/14/pEaQRzT.md.jpg" srcset="/img/loading.gif" lazyload alt="初代卡片背面设计" loading="lazy">
+    <img src="https://s21.ax1x.com/2025/03/14/pEaQRzT.md.jpg" alt="初代卡片背面设计" loading="lazy">
     <div style="padding: 8px; text-align: center;">初代卡片背面设计稿</div>
   </div>
   <div style="box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; max-width: 300px;">
-    <img src="https://s21.ax1x.com/2025/03/14/pEaQfQU.md.jpg" srcset="/img/loading.gif" lazyload alt="初代卡片正面设计" loading="lazy">
+    <img src="https://s21.ax1x.com/2025/03/14/pEaQfQU.md.jpg" alt="初代卡片正面设计" loading="lazy">
     <div style="padding: 8px; text-align: center;">初代卡片正面设计稿</div>
   </div>
 </div>
@@ -333,9 +359,18 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
     </div>
   
+  
+    <div class="statistics">
+  
+  
+
+  
+
+</div>
+
   
   
 </div>
@@ -381,11 +416,15 @@
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
+    
+      <script  src="/js/img-lazyload.js" ></script>
+    
   
 
 
 
+
+  <script defer src="/js/leancloud.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
